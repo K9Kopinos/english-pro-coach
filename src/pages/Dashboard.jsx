@@ -56,9 +56,25 @@ export default function Dashboard() {
         <h2 className="text-3xl font-semibold mb-2 text-gray-800">
           Bienvenue sur votre tableau de bord
         </h2>
-        <p className="text-gray-600">
+        <p className="text-gray-600 mb-6">
           Suivez vos modules et progressez à votre rythme.
         </p>
+
+        {/* BUTTONS */}
+        <div className="flex justify-center gap-4 mb-8 flex-wrap">
+          <button
+            onClick={() => navigate("/onboarding")}
+            className="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
+          >
+            ✏️ Compléter / Modifier vos attentes
+          </button>
+          <button
+            onClick={() => navigate("/evaluation")}
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            📊 Passer ou revoir votre évaluation
+          </button>
+        </div>
       </section>
 
       {/* MODULES */}
