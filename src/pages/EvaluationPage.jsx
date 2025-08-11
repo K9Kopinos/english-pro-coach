@@ -69,7 +69,7 @@ export default function EvaluationPage() {
     loadQuestions();
   }, [currentStep, user, profileLevel]);
 
-  // Sauvegarde automatique
+  // Sauvegarde automatique pour conserver les réponses
   async function saveAnswer(questionId, value) {
     if (!user) return;
     setAnswers((prev) => ({ ...prev, [questionId]: value }));
